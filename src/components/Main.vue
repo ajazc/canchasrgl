@@ -1,6 +1,9 @@
 <template>
   <main class="flex-1 py-8 bg-[#f8f9fa]">
     <div class="max-w-[1200px] mx-auto px-8">
+      <div class="flex justify-center mb-8">
+        <WeatherWidget />
+      </div>
       <section class="text-center mb-12">
         <h2 class="text-[2.5rem] text-[#2c3e50] mb-4">Tu Próximo Partido Comienza Acá</h2>
         <p class="text-[1.2rem] text-[#666]">Descubrí las mejores canchas de Río Gallegos y viví la pasión del fútbol al máximo.</p>
@@ -15,8 +18,8 @@
               <img :src="item.data.imagen" :alt="item.data.nombre" class="w-full h-[160px] object-cover">
               <div class="p-4">
                 <h4 class="text-[1.1rem] text-[#2c3e50] mb-[0.3rem]">{{ item.data.nombre }}</h4>
-                <p class="text-[#666] my-[0.2rem] text-[0.9rem]">{{ item.data.ubicacion }}</p>
-                <p class="text-[#666] my-[0.2rem] text-[0.9rem]">{{ item.data.tipo }}</p>
+                <p class="text-[#666] my-[0.2rem] text-[0.9rem]">📍 {{ item.data.ubicacion }}</p>
+                <p class="text-[#666] my-[0.2rem] text-[0.9rem]">⚽ {{ item.data.tipo }}</p>
                 <a :href="`tel:${item.data.telefono}`" class="inline-flex items-center gap-2 text-[1rem] font-bold text-white bg-[#27ae60] hover:bg-[#219150] px-3 py-1.5 rounded-lg my-[0.3rem] transition-colors no-underline w-fit">
                   <span>📞</span>
                   {{ item.data.telefono }}
@@ -41,6 +44,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import AdBanner from './AdBanner.vue'
+import WeatherWidget from './WeatherWidget.vue'
 
 // Importar imágen
 import laGambetaImg from '../assets/La Gambeta.png'
@@ -50,6 +54,7 @@ import diasImg from '../assets/Dias.png'
 import hispanoImg from '../assets/Hispano.png'
 import yatelImg from '../assets/Yatel.png'
 import laCurtiembreImg from '../assets/Curtiembre.png'
+import lusaImg from '../assets/Lusa.png'
 
 const canchas = ref([
   {
@@ -75,7 +80,7 @@ const canchas = ref([
     nombre: 'Fairplay',
     ubicacion: 'Av. Parque Industrial 801-899',
     tipo: 'Fútbol 5, Fútbol 6',
-    telefono: '',
+    telefono: '2966 53-4791',
     imagen: fairplayImg,  
     caracteristicas: ['Techo', 'Iluminación', 'Estacionamiento']
   },
@@ -113,6 +118,15 @@ const canchas = ref([
     tipo: 'Fútbol 5, Fútbol 6',
     telefono: '2966 41-2650',
     imagen: laCurtiembreImg,
+    caracteristicas: ['Césped sintético', 'Iluminación', 'Estacionamiento', 'Cancha adentro']
+  },
+  {
+    id: 8,
+    nombre: 'Lusa futbol',
+    ubicacion: 'Avenida Asturias Nro°730',
+    tipo: 'Fútbol 5, Futbol 6',
+    telefono: '2966 72-9823',
+    imagen: lusaImg,
     caracteristicas: ['Césped sintético', 'Iluminación', 'Estacionamiento', 'Cancha adentro']
   }
 ])

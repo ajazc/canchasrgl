@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white/20 px-4 py-2 rounded-xl backdrop-blur-sm text-white text-sm border border-white/10 transition-all duration-300 ease-in-out hover:bg-white/30" v-if="weather">
+  <div class="bg-white/20 px-4 py-2 rounded-xl backdrop-blur-sm text-[#2c3e50] text-sm border border-white/10 transition-all duration-300 ease-in-out hover:bg-white/30" v-if="weather">
     <div class="flex items-center gap-3">
       <span class="text-[1.8rem]">{{ weatherCondition.icon }}</span>
       <div class="flex flex-col">

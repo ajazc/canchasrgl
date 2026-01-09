@@ -10,12 +10,10 @@
           <li><a href="#inicio" class="text-white no-underline font-medium transition-opacity duration-300 hover:opacity-80">Inicio</a></li>
         </ul> -->
       </nav>
-      <WeatherWidget />
     </div>
     
   </header>
 </template>
 
 <script setup>
-import WeatherWidget from './WeatherWidget.vue'
 </script>
