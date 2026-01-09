@@ -8,9 +8,17 @@
     <!-- Decorative elements -->
     <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
     <div class="absolute -left-10 -top-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7373658997056234"
+     data-ad-slot="4208171806"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
   </div>
 </template>
 
 <script setup>
 // AdBanner component
+
 </script>
+
