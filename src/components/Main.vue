@@ -17,7 +17,10 @@
                 <h4 class="text-[1.1rem] text-[#2c3e50] mb-[0.3rem]">{{ item.data.nombre }}</h4>
                 <p class="text-[#666] my-[0.2rem] text-[0.9rem]">{{ item.data.ubicacion }}</p>
                 <p class="text-[#666] my-[0.2rem] text-[0.9rem]">{{ item.data.tipo }}</p>
-                <p class="text-[1rem] font-bold text-[#27ae60] my-[0.3rem]">{{ item.data.telefono }}</p>
+                <a :href="`tel:${item.data.telefono}`" class="inline-flex items-center gap-2 text-[1rem] font-bold text-white bg-[#27ae60] hover:bg-[#219150] px-3 py-1.5 rounded-lg my-[0.3rem] transition-colors no-underline w-fit">
+                  <span>📞</span>
+                  {{ item.data.telefono }}
+                </a>
                 <div class="flex flex-wrap gap-[0.4rem] my-[0.5rem]">
                   <span v-for="caracteristica in item.data.caracteristicas" :key="caracteristica" class="bg-[#e3f2fd] text-[#1976d2] px-[0.6rem] py-[0.2rem] rounded-[20px] text-[0.75rem]">
                     {{ caracteristica }}
