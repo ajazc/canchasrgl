@@ -6,9 +6,9 @@
         <h1 class="text-2xl font-bold m-0">Canchas Río Gallegos</h1>
       </div>
       <nav>
-        <ul class="list-none m-0 p-0 flex gap-8">
+        <!-- <ul class="list-none m-0 p-0 flex gap-8">
           <li><a href="#inicio" class="text-white no-underline font-medium transition-opacity duration-300 hover:opacity-80">Inicio</a></li>
-        </ul>
+        </ul> -->
       </nav>
       <WeatherWidget />
     </div>
