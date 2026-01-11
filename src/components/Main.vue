@@ -18,6 +18,9 @@
               <img :src="item.data.imagen" :alt="item.data.nombre" class="w-full h-[160px] object-cover">
               <div class="p-4">
                 <h4 class="text-[1.1rem] text-[#2c3e50] mb-[0.3rem]">{{ item.data.nombre }}</h4>
+                <!--
+                <p class="text-[#666] my-[0.2rem] text-[0.9rem]">📍 {{ item.data.ubicacion }} <a :href="item.data.googleMapsLink" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a></p>
+              -->
                 <p class="text-[#666] my-[0.2rem] text-[0.9rem]">📍 {{ item.data.ubicacion }}</p>
                 <p class="text-[#666] my-[0.2rem] text-[0.9rem]">⚽ {{ item.data.tipo }}</p>
                 <a :href="`tel:${item.data.telefono}`" class="inline-flex items-center gap-2 text-[1rem] font-bold text-white bg-[#27ae60] hover:bg-[#219150] px-3 py-1.5 rounded-lg my-[0.3rem] transition-colors no-underline w-fit">
@@ -33,7 +36,7 @@
             </div>
             
             <!-- Ad Banner -->
-            <AdBanner v-else-if="item.type === 'ad'" slot="42081711806" />
+            <AdBanner v-if="item.type === 'ad'" slot="42081711806"/>
           </template>
         </div>
       </section>
@@ -61,6 +64,7 @@ const canchas = ref([
     id: 1,
     nombre: 'La Gambeta Rg',
     ubicacion: 'Pres. Dr. Raúl R. Alfonsín 237',
+    //googleMapsLink: 'https://www.google.com/maps/search/?api=1&query=La+Gambeta+Rg+Rio+Gallegos',
     tipo: 'Fútbol 5, Futbol 6',
     telefono: '2966 58-8195' ,
     imagen: laGambetaImg,

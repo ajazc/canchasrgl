@@ -6,7 +6,6 @@
      data-ad-slot="4208171806"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
-
 </template>
 
 <script setup>
@@ -15,7 +14,7 @@ import { onMounted } from 'vue';
 // AdBanner component
 onMounted(() => {
   try{
-  if(window.adsbygoogle && this.$el){
+  if(window.adsbygoogle){
     window.adsbygoogle.push({});
   };
   }
