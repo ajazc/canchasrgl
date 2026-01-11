@@ -146,6 +146,5 @@ const itemsWithAds = computed(() => {
 onMounted(() => {
   //funion para mezclar las canchas y que aparezcan en orden aleatorio
   canchas.value.sort(() => Math.random() - 0.5) //que devuelve ?
-  console.log(canchas.value)
 })
 </script>
