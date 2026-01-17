@@ -36,7 +36,7 @@
             </div>
             
             <!-- Ad Banner -->
-            <AdBanner v-if="item.type === 'ad'" slot="42081711806"/>
+            <!--<AdBanner v-if="item.type === 'ad'" slot="42081711806"/>-->
           </template>
         </div>
       </section>

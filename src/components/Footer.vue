@@ -17,7 +17,6 @@
         
         <div>
           <h4 class="text-[1.2rem] mb-4 text-[#3498db]">Contacto</h4>
-          <p class="leading-relaxed mb-2">Tel: +54 2966 321049</p>
           <p class="leading-relaxed mb-2">Email: ajazc09@gmail.com</p>
           <p class="leading-relaxed mb-2">Río Gallegos, Santa Cruz</p>
         </div>
